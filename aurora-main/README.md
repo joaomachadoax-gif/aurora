@@ -2,7 +2,7 @@ Aurora - Plataforma para Gestão de Pessoas
 
 Landing page institucional da *Aurora*, uma plataforma de inteligência artificial aplicada ao RH para ajudar líderes a tomar decisões estratégicas sobre promoção, retenção e desenvolvimento de talentos.
 
-*Demo:* [link da url publica]
+URL pública: 
 
 ## Sobre o Projeto
 
@@ -50,6 +50,17 @@ Este projeto foi desenvolvido como uma landing page para apresentar a solução 
 ---
 
 ## Estrutura do Projeto
+
+├── assets/
+│ ├── images/
+│ │ ├── aurora_logo_final.png
+│ │ ├── img-grafico.png
+│ │ └── ...
+│ ├── js/
+│ │ └── tel.mask.js
+│ └── style.css
+├── index.html
+└── README.md
 
 ---
 

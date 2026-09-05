@@ -397,8 +397,11 @@ body {
 .form-container {
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-  padding: 1.75rem;
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+  padding: 2.5rem;
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  position: relative;
+  overflow: hidden; 
 }
 
 
@@ -408,6 +411,43 @@ body {
   }
 }
 
+/* Barra decorativa no topo */
+.form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #14b8a6, #7c3aed);
+}
+
+/* Inputs maiores e mais elegantes */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, 0.15);
+  background-color: #fafdff;
+}
+
+.form-control:hover,
+.form-select:hover {
+  border-color: #14b8a6;
+}
+
+/* Labels com ícones */
+.form-label i {
+  font-size: 0.85rem;
+}
 
 .form-container .form-control,
 .form-container .form-select {
@@ -549,4 +589,36 @@ section {
 
 .btn {
   font-weight: 500;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #14b8a6, #7c3aed);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+  color: #fff;
+}
+
+/* Badge do topo */
+.badge {
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* Mensagem de sucesso */
+.alert-success {
+  background-color: rgba(20, 184, 166, 0.1);
+  border: 2px solid #14b8a6;
+  color: #0f5132;
 }
