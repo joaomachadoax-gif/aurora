@@ -458,7 +458,28 @@ body {
   box-shadow: none;
 }
 
+:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
 
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+}
+
+.accordion-button:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: -3px;
+  box-shadow: none;
+}
+/* COMENTARIO DE BLOQUEIO DE ACCORDION */
+/*
 .accordion-button:focus {
   box-shadow: none;
   border-color: var(--aurora-border);
@@ -468,7 +489,7 @@ body {
 .accordion-body {
   font-size: 0.9rem;
 }
-
+*/
 
 /* Footer */
 
