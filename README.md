@@ -2,7 +2,7 @@ Aurora - Plataforma para Gestão de Pessoas
 
 Landing page institucional da *Aurora*, uma plataforma de inteligência artificial aplicada ao RH para ajudar líderes a tomar decisões estratégicas sobre promoção, retenção e desenvolvimento de talentos.
 
-URL: 
+URL: https://aurora-chi-neon.vercel.app
 
 ## Sobre o Projeto
 
